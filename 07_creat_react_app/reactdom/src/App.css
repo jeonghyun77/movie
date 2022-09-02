@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  padding: 100px; 
+  box-sizing: border-box;
+}
+h1{font-size: 24px; color: rgb(255, 53, 27); }
+h2{font-size: 20px; color: rgb(6, 245, 65); }
+h3{font-size: 18px; color: rgb(14, 118, 255); }
+ul{list-style: none; width: 100%; background: yellow; padding: 5px; box-sizing: border-box;}
+
+
