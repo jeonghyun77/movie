@@ -19,7 +19,7 @@ const Users = () => {
         <div>
             <h2>axios 활용하여 데이터 불러올 곳입니다.</h2>
             <h3>Users</h3>
-            {loading ? <Spinner /> :  <UserList users={users}/>}  {/* 사망조건 연산자 맞으면 <Spinner />, 틀리면 <UserList users={users}/> */}
+            {loading ? <Spinner /> :  <UserList users={users}/>}  {/* 삼항연산자(변수 = (조건) ? 참 : 거짓;) => 참이면 <Spinner />, 거짓이면 <UserList users={users}/> */}
            
         </div>
     );
