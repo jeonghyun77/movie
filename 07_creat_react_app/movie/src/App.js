@@ -1,12 +1,21 @@
+import React from 'react';
 
-import './App.css';
+class App extends React.Component {
+  state = {isLoading:true}
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({isLoading:false});
+    },3000)
+  }
+  render() {
+  const {isLoading}=this.state;
+    return (
 
-function App() {
-  return (
-    <div className="App">
-      <h1>영화앱 만들기</h1>
-    </div>
-  );
+      <div>
+        {isLoading ? 'Loading...' : 'We are ready'}
+      </div>
+    );
+  }
 }
 
 export default App;
