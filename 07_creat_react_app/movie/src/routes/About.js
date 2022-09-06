@@ -1,10 +1,10 @@
 import React from 'react';
-import './about.scss'
+import './about.scss';
 
 const About = (props) => {
     console.log(props)
     return (
-        <div>
+        <div className='about'>
             About this page.........
         </div>
     );
