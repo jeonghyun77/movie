@@ -3,22 +3,23 @@ import PropTypes from 'prop-types';
 import './Movie.scss';
 
 
+
 const Movie = ({id, title, year, summary, poster, genres}) => {
     return (
        <div className='movie'>
-        <img src={poster} alt={title} title={title}/>
+            <img src={poster} alt={title} title={title}/>
             <div className='movie_data'>
-               <h3 className='movie_title'>{title}</h3>
-               <h5 className='movie_year'>{year}</h5>
-               <h4>장르</h4>
-               <ul className='movie_geners'>
+                <h3 className='movie_title'>{title}</h3>
+                <h5 className='movie_year'>{year}</h5>
+                <h4>장르</h4>
+                <ul className='movie_geners'>
                     {genres.map((genre, index) => {
                         return <li key={index} className='movie_geners'>{genre}</li>
                     })}
-               </ul>
-               <p className='movie_summary'>{summary.slice(0, 180)}</p>
+                </ul>
+                <p className='movie_summary'>{summary.slice(0, 180)}</p>
             </div>
-       </div>
+        </div>
     );
 };
 
